@@ -1,0 +1,36 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fablix</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <div class="content" style="padding-top: 75px">
+      <table id="cart_details" class="table">
+        <thead>
+          <tr>
+            <th>Movies</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+        <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+        <tbody id="cart_body"></tbody>
+      </table>
+    </div>
+
+    <!-- include your own JS file -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="cart.js"></script>
+  </body>
+</html>

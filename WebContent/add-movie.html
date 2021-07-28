@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add New Star</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <form id="add-form" method="post" action="#">
+        <div class="form-group">
+          <label for="movie-name" class="col-form-label">Movie Name:</label>
+          <input
+            name="movieName"
+            type="text"
+            class="form-control"
+            id="movie-name"
+          />
+          <label for="movie-year" class="col-form-label">Movie Year:</label>
+          <input
+            name="movieYear"
+            type="number"
+            class="form-control"
+            id="movie-year"
+          />
+          <label for="movie-director" class="col-form-label"
+            >Movie Director:</label
+          >
+          <input
+            name="movieDirector"
+            type="text"
+            class="form-control"
+            id="movie-director"
+          />
+          <label for="star-name" class="col-form-label">Star Name:</label>
+          <input
+            name="starName"
+            type="text"
+            class="form-control"
+            id="star-name"
+          />
+          <label for="genre-name" class="col-form-label">Genre:</label>
+          <input
+            name="genreName"
+            type="text"
+            class="form-control"
+            id="genre-name"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Movie</button>
+      </form>
+      <span id="result_message"></span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Load our own JS file -->
+    <!-- The path is relative to single-star.html, since these two files are in the same directory -->
+    <!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+ otherwise the url is relative to the root path-->
+    <script src="add-movie.js"></script>
+  </body>
+</html>

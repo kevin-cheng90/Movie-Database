@@ -1,0 +1,61 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Confirmation</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <div class="container col-auto" style="padding-top: 75px;">
+      <h1>Confirmation Page</h1>
+      <div class="table-responsive-sm">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Sale ID</th>
+              <th>Movie</th>
+              <th class="center">Qty</th>
+              <th class="right">Price</th>
+            </tr>
+          </thead>
+          <tbody id="confirm_body">
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-5">
+
+        </div>
+
+        <div class="col-lg-4 col-sm-5 ml-auto">
+          <table class="table table-clear">
+            <tbody>
+                <td class="left">
+                  <strong>Total</strong>
+                </td>
+                <td class="right">
+                  <strong>$</strong>
+                  <strong id="final">0</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="movies.html">
+        Home
+      </a>
+      </div>
+
+    <!-- include your own JS file -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="confirmation.js"></script>
+  </body>
+</html>
